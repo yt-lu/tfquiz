@@ -7,8 +7,8 @@ Sys.setenv(TZ = 'US/Eastern')
 shinyServer(function(input, output, session) {
   observeEvent(input$submit, {
     score <- 0
-    key <- c("T", "F", "F", "F", "T", 
-             "F", "T", "T", "T", "F")
+    key <- c("F", "T", "F", "F", "F", 
+             "T", "F", "T", "T", "T")
     if (input$q1 == key[1]) {score <- score + 1}
     if (input$q2 == key[2]) {score <- score + 1}
     if (input$q3 == key[3]) {score <- score + 1}
